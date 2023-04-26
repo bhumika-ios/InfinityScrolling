@@ -6,15 +6,15 @@
 //
 
 import Foundation
-
-struct User: Decodable, Identifiable{
+ 
+struct User: Decodable, Identifiable {
     let id: Int
     let name: String
-    let url: String
-    
-    enum CodeKeys: String, CodingKey {
+    let avatarUrl: String
+     
+    enum CodingKeys: String, CodingKey {
         case id
         case name = "login"
-        case url = "avatar_url"
+        case avatarUrl = "avatar_url"
     }
 }
