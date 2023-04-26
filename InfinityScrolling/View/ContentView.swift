@@ -32,7 +32,7 @@ struct ContentView: View {
                 .padding(.top,25)
                 
                 LazyVGrid(columns: self.columns, spacing: 25){
-                    ForEach(0..<100) { user in
+                    ForEach(userVM.users, id: \.id) { user in
                        UserView()
                     }
                 }
