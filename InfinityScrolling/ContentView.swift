@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var columns = Array(repeating: GridItem(.flexible(), spacing: 15), count: 2)
+    
     var body: some View {
 
             ScrollView(.vertical, showsIndicators: false){
@@ -26,6 +29,12 @@ struct ContentView: View {
                 }
                 .padding(.horizontal)
                 .padding(.top,25)
+                
+                LazyVGrid(columns: self.columns, spacing: 25){
+                    ForEach(0..<100) { user in
+                        Text("User List \(user)")
+                    }
+                }
             }
     
             .background(Color.black.opacity(0.05).edgesIgnoringSafeArea(.all))
