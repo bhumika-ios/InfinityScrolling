@@ -9,13 +9,26 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+
+            ScrollView(.vertical, showsIndicators: false){
+                HStack{
+                    Text("User List")
+                        .font(.title)
+                        .fontWeight(.bold)
+                    Spacer()
+                    Button{
+                        
+                    }label: {
+                        Image(systemName: "rectangle.grid.1x2")
+                            .font(.system(size: 24))
+                            .foregroundColor(.black)
+                    }
+                }
+                .padding(.horizontal)
+                .padding(.top,25)
+            }
+    
+            .background(Color.black.opacity(0.05).edgesIgnoringSafeArea(.all))
     }
 }
 
