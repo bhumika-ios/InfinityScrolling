@@ -13,6 +13,7 @@
 		AC6612A129F9121600D38DB5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6612A029F9121600D38DB5 /* Preview Assets.xcassets */; };
 		AC6612A829F916F200D38DB5 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6612A729F916F200D38DB5 /* UserView.swift */; };
 		AC6612AA29F91F3800D38DB5 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6612A929F91F3800D38DB5 /* UserModel.swift */; };
+		AC6612B029F9211200D38DB5 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6612AF29F9211200D38DB5 /* ApiService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		AC6612A029F9121600D38DB5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC6612A729F916F200D38DB5 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		AC6612A929F91F3800D38DB5 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		AC6612AF29F9211200D38DB5 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +57,13 @@
 		AC66129829F9121500D38DB5 /* InfinityScrolling */ = {
 			isa = PBXGroup;
 			children = (
+				AC6612AE29F920FD00D38DB5 /* ApiManager */,
+				AC6612AD29F920EA00D38DB5 /* View */,
+				AC6612AC29F920E000D38DB5 /* Model */,
+				AC6612AB29F920D400D38DB5 /* ViewModel */,
 				AC66129929F9121500D38DB5 /* InfinityScrollingApp.swift */,
-				AC66129B29F9121500D38DB5 /* ContentView.swift */,
 				AC66129D29F9121600D38DB5 /* Assets.xcassets */,
 				AC66129F29F9121600D38DB5 /* Preview Content */,
-				AC6612A729F916F200D38DB5 /* UserView.swift */,
-				AC6612A929F91F3800D38DB5 /* UserModel.swift */,
 			);
 			path = InfinityScrolling;
 			sourceTree = "<group>";
@@ -71,6 +74,38 @@
 				AC6612A029F9121600D38DB5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AC6612AB29F920D400D38DB5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AC6612AC29F920E000D38DB5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC6612A929F91F3800D38DB5 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC6612AD29F920EA00D38DB5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC66129B29F9121500D38DB5 /* ContentView.swift */,
+				AC6612A729F916F200D38DB5 /* UserView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC6612AE29F920FD00D38DB5 /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				AC6612AF29F9211200D38DB5 /* ApiService.swift */,
+			);
+			path = ApiManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC66129C29F9121500D38DB5 /* ContentView.swift in Sources */,
+				AC6612B029F9211200D38DB5 /* ApiService.swift in Sources */,
 				AC6612A829F916F200D38DB5 /* UserView.swift in Sources */,
 				AC6612AA29F91F3800D38DB5 /* UserModel.swift in Sources */,
 				AC66129A29F9121500D38DB5 /* InfinityScrollingApp.swift in Sources */,
