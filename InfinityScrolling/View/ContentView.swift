@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @ObservedObject private var userVM = UserViewModel()
+   
     @State var columns = Array(repeating: GridItem(.flexible(), spacing: 15), count: 2)
     
     var body: some View {
@@ -33,12 +34,19 @@ struct ContentView: View {
                 
                 LazyVGrid(columns: self.columns, spacing: 25){
                     ForEach(userVM.users, id: \.id) { user in
-                       UserView()
+                        UserView(user: user)
+                        
                     }
+                    Spinner(isFailed: userVM.isRequestFailed)
+                        .onAppear(perform: fetchData)
                 }
+                .padding([.horizontal, .top])
             }
     
             .background(Color.black.opacity(0.05).edgesIgnoringSafeArea(.all))
+    }
+    private func fetchData(){
+        userVM.getUsers()
     }
 }
 
