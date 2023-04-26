@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @ObservedObject private var userVM = UserViewModel()
     @State var columns = Array(repeating: GridItem(.flexible(), spacing: 15), count: 2)
     
     var body: some View {
