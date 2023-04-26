@@ -29,9 +29,9 @@ struct UserView: View {
             Text(user.name)
                 .fontWeight(.bold)
         }
-//        .sheet(isPresented: $show, content: {
-//            DetailsView(user: User(id: user.id, name: user.name, avatarUrl: user.avatarUrl))
-//        })
+        .sheet(isPresented: $show, content: {
+            DetailsView(user: User(id: user.id, name: user.name, avatarUrl: user.avatarUrl))
+        })
     }
 }
 
