@@ -24,6 +24,9 @@ struct DetailsView: View {
                 Text("User Name :")
                 Text(user.name)
             }
+            .padding()
+            Text(user.htmlUrl)
+                .foregroundColor(.blue)
         }
     }
 }
