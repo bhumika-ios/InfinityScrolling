@@ -72,7 +72,6 @@
 				AC66129929F9121500D38DB5 /* InfinityScrollingApp.swift */,
 				AC66129D29F9121600D38DB5 /* Assets.xcassets */,
 				AC66129F29F9121600D38DB5 /* Preview Content */,
-				AC6612B329F930B700D38DB5 /* Spinner.swift */,
 			);
 			path = InfinityScrolling;
 			sourceTree = "<group>";
@@ -104,6 +103,7 @@
 		AC6612AD29F920EA00D38DB5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AC6612B329F930B700D38DB5 /* Spinner.swift */,
 				AC66129B29F9121500D38DB5 /* ContentView.swift */,
 				AC6612A729F916F200D38DB5 /* UserView.swift */,
 				AC6612B529F93B3D00D38DB5 /* DetailView.swift */,
