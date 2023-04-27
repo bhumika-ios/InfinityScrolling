@@ -30,7 +30,7 @@ struct UserView: View {
                 .fontWeight(.bold)
         }
         .sheet(isPresented: $show, content: {
-            DetailsView(user: User(id: user.id, name: user.name, avatarUrl: user.avatarUrl))
+            DetailsView(user: User(id: user.id, name: user.name, avatarUrl: user.avatarUrl, htmlUrl: user.htmlUrl))
         })
     }
 }
@@ -38,7 +38,7 @@ struct UserView: View {
 struct UserView_Previews: PreviewProvider {
     static var previews: some View {
       
-               let mockUser = User(id: 1, name: "cairocoders", avatarUrl: "")
+        let mockUser = User(id: 1, name: "cairocoders", avatarUrl: "", htmlUrl: "")
                UserView(user: mockUser)
            }
 }
