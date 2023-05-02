@@ -17,6 +17,7 @@ struct User: Decodable, Identifiable {
         case id
         case name = "login"
         case avatarUrl = "avatar_url"
+        
         case htmlUrl = "html_url"
     }
 }

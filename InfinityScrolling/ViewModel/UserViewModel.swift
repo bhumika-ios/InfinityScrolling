@@ -30,6 +30,5 @@ class UserViewModel: ObservableObject {
                 self.users.append(contentsOf: users)
                 self.currentLastId = users.last?.id
             }
- 
     }
 }

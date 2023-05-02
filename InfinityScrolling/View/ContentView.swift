@@ -15,24 +15,10 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView{
-            ScrollView(.vertical, showsIndicators: false){
-//                HStack{
-//                    Text("User List")
-//                        .font(.title)
-//                        .fontWeight(.bold)
-//                    Spacer()
-//                    Button{
-//
-//                    }label: {
-//                        Image(systemName: "rectangle.grid.1x2")
-//                            .font(.system(size: 24))
-//                            .foregroundColor(.black)
-//                    }
-//                }
-//                .padding(.horizontal)
-//                .padding(.top,25)
-                
-                LazyVGrid(columns: self.columns, spacing: 25){
+            ScrollView(.vertical, showsIndicators: false)
+            {
+                LazyVGrid(columns: self.columns, spacing: 25)
+                {
                     ForEach(userVM.users, id: \.id) { user in
                         UserView(user: user)
                         
